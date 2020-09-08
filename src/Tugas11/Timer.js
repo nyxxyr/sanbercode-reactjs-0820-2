@@ -5,7 +5,7 @@ class Timer extends React.Component{
         super(props)
         this.state = {
             isShow: true,
-            time: 10,
+            time: 100,
             clock: 0
         }
     }

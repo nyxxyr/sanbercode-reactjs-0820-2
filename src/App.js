@@ -24,6 +24,8 @@ const data = [
 function App() {
   return (
     <div>
+      <Timer />
+      <br />
       {/* Soal 1 */}
       <Form />
       <br />
@@ -34,8 +36,6 @@ function App() {
         {/* Quiz */}
         <ListOfCards data={data} />
       </div>
-      <br />
-        <Timer />
     </div>
   );
 }
