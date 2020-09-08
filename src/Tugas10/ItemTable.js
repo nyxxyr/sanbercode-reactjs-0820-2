@@ -8,6 +8,7 @@ class TableHeader extends React.Component{
                     <th>Nama</th>
                     <th>Harga</th>
                     <th>Berat</th>
+                    <th colSpan={2}>Tombol Aksi</th>
                 </tr>
             </thead>
         )
@@ -15,6 +16,15 @@ class TableHeader extends React.Component{
 }
 
 class TableBody extends React.Component{
+    constructor(props){
+        super(props)
+        this.handleEditBtn = (event) => {
+            this.props.handleEditBtn(event)
+        }
+        this.handleDeleteBtn = (event) => {
+            this.props.handleDeleteBtn(event)
+        }
+    }
     render(){
         return(
             <tbody>
@@ -25,6 +35,8 @@ class TableBody extends React.Component{
                                 <td>{item.nama}</td>
                                 <td>{item.harga}</td>
                                 <td>{item.berat/1000} Kg</td>
+                                <td><button onClick={this.handleEditBtn} value={index} className='btn'>Edit</button></td>
+                                <td><button onClick={this.handleDeleteBtn} value={index} className='btn'>Hapus</button></td>
                             </tr>
                         )
                     })   
@@ -36,11 +48,11 @@ class TableBody extends React.Component{
 
 class ItemTable extends React.Component{
     render(){
-        const dataBuah = this.props.dataHargaBuah;
+        let dataBuah = this.props.dataHargaBuah;
         return(
             <table border="2" className="tbl">
                 <TableHeader />
-                <TableBody dataBuah={dataBuah}/>
+                <TableBody handleEditBtn={this.props.handleEditBtn} handleDeleteBtn={this.props.handleDeleteBtn} dataBuah={dataBuah}/>
             </table>
         )
     }

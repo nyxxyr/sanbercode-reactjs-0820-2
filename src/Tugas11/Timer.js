@@ -36,13 +36,13 @@ class Timer extends React.Component{
     }
     render(){
         let condition = this.state.isShow ?
-                <div>
-                    <h2>Hai {this.state.clock}</h2>
-                    <h2>Hai {this.state.time}</h2> 
+                <div style={{textAlign: 'center'}}>
+                    <h2>Sekarang Pukul {this.state.clock}</h2>
+                    <h2>Sisa Waktu {this.state.time}</h2> 
                 </div>
                 : ''
         return(
-            <div>{condition}</div>
+            <div className="form-control">{condition}</div>
         )
     }
 }

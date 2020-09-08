@@ -24,18 +24,16 @@ const data = [
 function App() {
   return (
     <div>
-      <Timer />
+      {/* <Timer />
       <br />
-      {/* Soal 1 */}
       <Form />
-      <br />
-      {/* Soal 2 */}
+      <br /> */}
       <ItemLists />
-      <br />
+      {/* <br />
       <div style={{width: '50%', margin: '2rem auto'}}>
-        {/* Quiz */}
         <ListOfCards data={data} />
       </div>
+      <br /> */}
     </div>
   );
 }
