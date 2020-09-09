@@ -117,7 +117,7 @@ const ApiFetch = () => {
                         list.map((item, index) => {
                             return(<tr key={index}>
                                 <td>{item.name}</td>
-                                <td>{item.weight}</td>
+                                <td>{item.weight/1000} Kg</td>
                                 <td>{item.price}</td>
                                 <td><button onClick={handleEdit} value={item.id}>Edit</button></td>
                                 <td><button onClick={handleDelete} value={item.id}>Delete</button></td>
