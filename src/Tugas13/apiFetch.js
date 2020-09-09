@@ -66,7 +66,7 @@ const ApiFetch = () => {
                     name: '',
                     weight: '',
                     price: '',
-                    index: 0
+                    id: 0
                 })
             })
 
@@ -83,7 +83,7 @@ const ApiFetch = () => {
                         name: '',
                         weight: '',
                         price: '',
-                        index: 0
+                        id: 0
                     })
                 })
         }else{
@@ -94,7 +94,7 @@ const ApiFetch = () => {
                         name: '',
                         weight: '',
                         price: '',
-                        index: 0
+                        id: 0
                     })
                 })
         }
