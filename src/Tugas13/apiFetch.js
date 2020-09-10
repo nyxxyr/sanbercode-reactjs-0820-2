@@ -4,7 +4,7 @@ import Axios from 'axios'
 const ApiFetch = () => {
     // states
     const [list, setList] = useState(null)
-    const [api, setApi] = useState(`http://backendexample.sanbercloud.com/api/fruits`)
+    const [api] = useState(`http://backendexample.sanbercloud.com/api/fruits`)
     const [input, setInput] = useState({
         name: '',
         weight: '',
