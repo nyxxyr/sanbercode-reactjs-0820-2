@@ -116,6 +116,8 @@ class ItemLists extends React.Component{
                 <ItemTable handleEditBtn={this.handleEditBtn} handleDeleteBtn={this.handleDeleteBtn} dataHargaBuah={this.state.dataHargaBuah}/>
                 <br></br>
                 <FormBuah handleSubmit={this.handleSubmit} handleChange={this.handleChange} data={this.state} />
+                <br/>
+                <br/>
             </div>
         );
     }

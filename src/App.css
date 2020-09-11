@@ -77,3 +77,41 @@ header{
 .card .bold{
   font-weight: 700;
 }
+
+.nav-light{
+  background-color:#EBECF0;
+  border: solid 1px #BEBEBE;
+}
+
+.nav-light a{
+  text-decoration: none;
+  color: #808080;
+}
+
+.nav-light a:hover{
+  color: #333333;
+  transition-duration: 1s;
+}
+
+.nav-dark{
+  background-color:#222222;
+  border: solid 1px #111111;
+}
+
+.nav-dark a{
+  text-decoration: none;
+  color: #BEBEBE;
+}
+
+.nav-dark a:hover{
+  color: #888;
+  transition-duration: 1s;
+}
+
+.navigation{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 1rem 0;
+}

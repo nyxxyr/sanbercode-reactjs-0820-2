@@ -41,7 +41,6 @@ const FruitForm = () => {
                     })
                 })
         }else{
-            let temp = fruits
             let data = {name: input.name, weight: input.weight, price: input.price}
             Axios.put(`${api}/${input.id}`, data)
                 .then(res => {
